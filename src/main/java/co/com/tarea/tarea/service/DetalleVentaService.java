@@ -35,8 +35,8 @@ public class DetalleVentaService {
     }
 
     // eliminar una DetalleVenta
-    public Mono<Void> delete(DetalleVenta detalleVenta) {
-        return detalleVentaRepository.delete(detalleVenta);
+    public Mono<Void> delete(int id) {
+        return detalleVentaRepository.deleteById(id);
     }
 
     //consultar DetalleVenta por id de venta

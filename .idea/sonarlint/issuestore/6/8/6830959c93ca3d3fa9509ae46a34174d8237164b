@@ -1,0 +1,16 @@
+
+\
+java:S1128"?Remove this unused import 'co.com.tarea.tarea.models.Producto'.(Ç¼ÒÁ8»óŽÇ¿1
+i
+java:S1128"GRemove this unused import 'co.com.tarea.tarea.service.ProductoService'.(ï¥ïùÿÿÿÿÿ8¼óŽÇ¿1
+t
+java:S1128"RRemove this unused import 'org.springframework.web.bind.annotation.DeleteMapping'.(­ìÎªþÿÿÿÿ8¼óŽÇ¿1
+s
+java:S1128"QRemove this unused import 'org.springframework.web.bind.annotation.PathVariable'.(¹ûñÅþÿÿÿÿ8¼óŽÇ¿1
+r
+java:S1128	"PRemove this unused import 'org.springframework.web.bind.annotation.PostMapping'.(äƒà°ùÿÿÿÿ8¼óŽÇ¿1
+r
+java:S1128
+"PRemove this unused import 'org.springframework.web.bind.annotation.RequestBody'.(â­½Àýÿÿÿÿ8½óŽÇ¿1
+Z
+java:S1128"8Remove this unused import 'reactor.core.publisher.Flux'.(·äÍÆøÿÿÿÿ8½óŽÇ¿1

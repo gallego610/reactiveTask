@@ -48,12 +48,12 @@ public class DetalleVentaController {
                     DetalleVenta det = new DetalleVenta();
                     det.setCodigo("500");
                     Mono<String> prd = productoService.obtenerProductoPorId(detalleVenta.getProductoId())
-                            .flatMap(r -> Mono.just(r.getId()+""))
+                            .flatMap(r -> Mono.just(r.getId() + ""))
                             .switchIfEmpty(Mono.just("")
                             );
 
                     Mono<String> vnt = ventaService.obtenerVentaPorId(detalleVenta.getVentaId())
-                            .flatMap(r -> Mono.just(r.getId()+""))
+                            .flatMap(r -> Mono.just(r.getId() + ""))
                             .switchIfEmpty(Mono.just("")
                             );
 

@@ -1,7 +1,6 @@
 package co.com.tarea.tarea.models;
 
 import co.com.tarea.tarea.models.ext.MyException;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
@@ -26,7 +25,6 @@ public class DetalleVenta extends MyException {
 
     @Column("valorVenta")
     private double valorVenta;
-
 
 
 }

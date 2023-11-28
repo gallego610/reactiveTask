@@ -7,10 +7,6 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-
 @Service
 public class VentaService {
 
@@ -21,22 +17,22 @@ public class VentaService {
     }
 
     //obtener todas las ventas
-    public Flux<Venta> obtenerTodasLasVentas(){
+    public Flux<Venta> obtenerTodasLasVentas() {
         return ventaRepository.findAll();
     }
 
     //obtener venta por id
-    public Mono<Venta> obtenerVentaPorId(int id){
+    public Mono<Venta> obtenerVentaPorId(int id) {
         return ventaRepository.findById(id);
     }
 
     //guardar venta
-    public Mono<Venta> guardarVenta(Venta venta){
+    public Mono<Venta> guardarVenta(Venta venta) {
         return ventaRepository.save(venta);
     }
 
     //eliminar venta
-    public Mono<Void> eliminarVenta(Integer id){
+    public Mono<Void> eliminarVenta(Integer id) {
         return ventaRepository.deleteById(id);
     }
 

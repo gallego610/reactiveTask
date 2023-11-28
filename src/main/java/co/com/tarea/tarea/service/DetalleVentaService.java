@@ -4,7 +4,6 @@ package co.com.tarea.tarea.service;
 import co.com.tarea.tarea.models.DetalleVenta;
 import co.com.tarea.tarea.models.repository.DetalleVentaRepository;
 import org.springframework.stereotype.Service;
-
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
@@ -21,7 +20,6 @@ public class DetalleVentaService {
     public Flux<DetalleVenta> obtenerTodosLosDetalleVenta() {
         return detalleVentaRepository.findAll();
     }
-
 
 
     // consultar una DetalleVenta por id

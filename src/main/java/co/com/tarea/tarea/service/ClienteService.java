@@ -16,22 +16,21 @@ public class ClienteService {
         this.clienteRepository = clienteRepository;
     }
 
-    public Flux<Cliente> obtenerTodosLosClientes(){
+    public Flux<Cliente> obtenerTodosLosClientes() {
         return clienteRepository.findAll();
     }
 
-    public Mono<Cliente> obtenerClientePorId(int id){
+    public Mono<Cliente> obtenerClientePorId(int id) {
         return clienteRepository.findById(id);
     }
 
-    public Mono<Cliente> guardarCliente(Cliente cliente){
+    public Mono<Cliente> guardarCliente(Cliente cliente) {
         return clienteRepository.save(cliente);
     }
 
-    public Mono<Void> eliminarCliente(Integer id){
+    public Mono<Void> eliminarCliente(Integer id) {
         return clienteRepository.deleteById(id);
     }
-
 
 
 }

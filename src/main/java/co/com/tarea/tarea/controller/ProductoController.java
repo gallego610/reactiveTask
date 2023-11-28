@@ -39,7 +39,7 @@ public class ProductoController {
     @GetMapping("/categoria/{id}")
     public Mono<String> obtenerProductoPorId(@PathVariable Integer id) {
         return productoService.obtenerProductoPorId(id)
-                .flatMap(x-> Mono.just("Categoria del producto ".concat(id.toString()).concat(": ")
+                .flatMap(x -> Mono.just("Categoria del producto ".concat(id.toString()).concat(": ")
                         .concat(x.categoria())))
                 .switchIfEmpty(Mono.just("No existe el producto"));
     }
